@@ -8,7 +8,7 @@ def reverse(s):
     rev = s[::-1]
     return rev
 
-# Essa função vai decoficar, encontrar quem é o *1* e quem é o *0* da Direita pra Esquerda, padrão Little Endian
+# Essa função vai decodificar, encontrar quem é o *1* e quem é o *0* da Direita pra Esquerda, padrão Little Endian
 def decodifica(codeBinario, codeUnario):
     decimal = len(codeUnario)
     if decimal % 2 == 0:
@@ -88,7 +88,7 @@ if bigEndian:
     códigoBinário = BigEndian2LittleEndian(códigoBinário)
 zero, um = decodifica(códigoBinário, códigoUnário)
 # Lembrando que:
-##### Direta -> Esquerda ===> Little Endian
+##### Direita -> Esquerda ===> Little Endian
 ##### Esquerda -> Direita ==> Big Endian
 # Se for Little Endian não mexemos, mas se for mexemos pra inverter a leitura do código,
 # e na hora de imprimir deveríamos também de forma reversa, pois tratamos o código sempre como little endian
